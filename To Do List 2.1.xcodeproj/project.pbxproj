@@ -14,6 +14,9 @@
 		2B1AC83A2ADB17B2004867AF /* To_Do_List_2_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8382ADB17B2004867AF /* To_Do_List_2_1.xcdatamodeld */; };
 		2B1AC83C2ADB17B3004867AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1AC83B2ADB17B3004867AF /* Assets.xcassets */; };
 		2B1AC83F2ADB17B3004867AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1AC83D2ADB17B3004867AF /* LaunchScreen.storyboard */; };
+		2B1AC8482ADB182D004867AF /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8462ADB182D004867AF /* Item+CoreDataClass.swift */; };
+		2B1AC8492ADB182D004867AF /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8472ADB182D004867AF /* Item+CoreDataProperties.swift */; };
+		2B1AC84E2ADB19A0004867AF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC84D2ADB19A0004867AF /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		2B1AC83B2ADB17B3004867AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B1AC83E2ADB17B3004867AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B1AC8402ADB17B3004867AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1AC8462ADB182D004867AF /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2B1AC8472ADB182D004867AF /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2B1AC84D2ADB19A0004867AF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		2B1AC82E2ADB17B2004867AF /* To Do List 2.1 */ = {
 			isa = PBXGroup;
 			children = (
+				2B1AC84A2ADB18B8004867AF /* Model */,
+				2B1AC84B2ADB18D4004867AF /* View */,
+				2B1AC84C2ADB18E4004867AF /* ViewModel */,
 				2B1AC82F2ADB17B2004867AF /* AppDelegate.swift */,
 				2B1AC8312ADB17B2004867AF /* SceneDelegate.swift */,
-				2B1AC8332ADB17B2004867AF /* ViewController.swift */,
 				2B1AC8352ADB17B2004867AF /* Main.storyboard */,
 				2B1AC83B2ADB17B3004867AF /* Assets.xcassets */,
 				2B1AC83D2ADB17B3004867AF /* LaunchScreen.storyboard */,
 				2B1AC8402ADB17B3004867AF /* Info.plist */,
-				2B1AC8382ADB17B2004867AF /* To_Do_List_2_1.xcdatamodeld */,
 			);
 			path = "To Do List 2.1";
+			sourceTree = "<group>";
+		};
+		2B1AC84A2ADB18B8004867AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B1AC8462ADB182D004867AF /* Item+CoreDataClass.swift */,
+				2B1AC8472ADB182D004867AF /* Item+CoreDataProperties.swift */,
+				2B1AC8382ADB17B2004867AF /* To_Do_List_2_1.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B1AC84B2ADB18D4004867AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B1AC8332ADB17B2004867AF /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B1AC84C2ADB18E4004867AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B1AC84D2ADB19A0004867AF /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1AC8492ADB182D004867AF /* Item+CoreDataProperties.swift in Sources */,
+				2B1AC8482ADB182D004867AF /* Item+CoreDataClass.swift in Sources */,
 				2B1AC83A2ADB17B2004867AF /* To_Do_List_2_1.xcdatamodeld in Sources */,
 				2B1AC8342ADB17B2004867AF /* ViewController.swift in Sources */,
 				2B1AC8302ADB17B2004867AF /* AppDelegate.swift in Sources */,
 				2B1AC8322ADB17B2004867AF /* SceneDelegate.swift in Sources */,
+				2B1AC84E2ADB19A0004867AF /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
